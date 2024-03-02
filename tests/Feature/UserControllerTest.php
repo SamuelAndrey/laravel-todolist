@@ -3,8 +3,6 @@
 namespace Tests\Feature;
 
 use Database\Seeders\UserSeeder;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\DB;
 use Tests\TestCase;
 
@@ -80,4 +78,5 @@ class UserControllerTest extends TestCase
         $this->post('/logout')
             ->assertRedirect("/");
     }
+
 }
